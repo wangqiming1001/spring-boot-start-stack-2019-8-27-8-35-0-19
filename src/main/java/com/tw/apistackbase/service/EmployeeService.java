@@ -64,6 +64,7 @@ public class EmployeeService {
 		int id = model.getId();
 		for (int i = 0; i < employees.size(); i++) {
 			if(employees.get(i).getId() == id) {
+				employee.setId(id);
 				employee.setName(model.getName());
 				employee.setAge(model.getAge());
 				employee.setGender(model.getGender());
